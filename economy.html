@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>05 – Gebäude & Wirtschaft · AncientLords Wiki</title>
+<title>04 – Aufbau · AncientLords Wiki</title>
 <link rel="stylesheet" href="assets/style.css"/>
+<style>
+.bauphasen { list-style:none; padding:0; margin:20px 0 32px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr)); gap:16px }
+.bauphasen img { display:block; width:100%; height:auto }
+.bauphasen h3 { margin:0 }
+</style>
 </head>
 <body>
 <div class="layout">
@@ -23,7 +28,7 @@
 <a class="" href="gameplay.html"><span class="num">02</span><span>Spielprinzip</span></a>
 <a class="" href="multiplayer.html"><span class="num">03</span><span>Spielmodi</span></a>
 <a class="" href="factions.html"><span class="num">04</span><span>Fraktionen</span></a>
-<a class="active" href="economy.html"><span class="num">05</span><span>Gebäude & Wirtschaft</span></a>
+<a class="active" href="economy.html"><span class="num">04</span><span>Aufbau</span></a>
 <a class="" href="combat.html"><span class="num">06</span><span>Kampf</span></a>
 <a class="" href="alchemy.html"><span class="num">07</span><span>Alchemie</span></a>
 <a class="" href="runes.html"><span class="num">08</span><span>Runenwerkstatt</span></a>
@@ -40,10 +45,19 @@
   </aside>
   <main class="main">
         
-<div class="page-head"><div><h1>05 – Gebäude & Wirtschaft</h1><p>Dieses Kapitel bündelt das Baumenü, die Tiefenschmiede-Gebäude, Platzierung, Produktionslogik und die sichtbaren Bauphasen.</p></div><span class="badge fixed">mehrere Mockups vorhanden</span></div>
+<header class="page-head"><div><h1>04 – Aufbau</h1><p>Der Ancient Lord regt sein Volk zum Bauen an und weist jedem Gebäude seinen Platz zu. Die Arbeiter übernehmen die Ausführung. Sobald die Ressourcen für den nächsten Bauabschnitt bereitliegen, führt ein Arbeiter ihn aus. Fehlt Material, ruht der Bau auf dem erreichten Stand.</p></div></header>
+<section aria-labelledby="sippenhalle"><h2 id="sippenhalle">Der Bau einer Sippenhalle</h2><p>Jedes Gebäude entsteht in sechs Phasen, von der Bodenplatte bis zum fertigen Bauwerk. Jede Phase kostet ein Sechstel der Gesamtkosten. Die Sippenhalle der Tiefenschmiede zeigt, wie jeder dieser Schritte auf der Karte sichtbar wird.</p>
+<ol class="bauphasen">
+  <li class="card"><img src="assets/img/sippenhalle-1.png" width="512" height="480" alt="Steine markieren den Grundriss auf dem vorbereiteten Boden."/><div class="card-body"><h3>Phase 1 · Bodenplatte</h3></div></li>
+  <li class="card"><img src="assets/img/sippenhalle-2.png" width="512" height="480" alt="Die ersten Steinreihen und die Eingangstreppe sind gesetzt."/><div class="card-body"><h3>Phase 2 · Fundament</h3></div></li>
+  <li class="card"><img src="assets/img/sippenhalle-3.png" width="512" height="480" alt="Gerüste und ein Holzkran flankieren die wachsenden Wände."/><div class="card-body"><h3>Phase 3 · Mauerbau</h3></div></li>
+  <li class="card"><img src="assets/img/sippenhalle-4.png" width="512" height="480" alt="Die Außenwände mit Torbogen und Fensteröffnungen stehen."/><div class="card-body"><h3>Phase 4 · Rohbau</h3></div></li>
+  <li class="card"><img src="assets/img/sippenhalle-5.png" width="512" height="480" alt="Ziegel decken das Dach, der Schornstein ist gesetzt."/><div class="card-body"><h3>Phase 5 · Dach</h3></div></li>
+  <li class="card"><img src="assets/img/sippenhalle-6.png" width="512" height="480" alt="Banner schmücken den Eingang, die Fenster leuchten und aus dem Schornstein steigt Rauch."/><div class="card-body"><h3>Phase 6 · Fertige Sippenhalle</h3></div></li>
+</ol></section>
 <div class="cover"><img src="assets/img/village-build.png" alt="Dorf mit Baumenü"/></div>
 <div class="grid cols-2"><div class="card pad"><h2>Baumenü-Kategorien</h2><ul class="clean"><li>Profan</li><li>Militär</li><li>Arkan</li><li>Alchemist</li><li>Reichtum</li></ul></div><div class="card pad"><h2>Profane Tiefenschmiede-Gebäude</h2><ul class="clean"><li>Sippenhaus</li><li>Clanhalle</li><li>Schankstube</li><li>Ahnenmal</li><li>Schmiede</li><li>Runenhaus</li><li>Geodenhaus</li><li>Werkstatt</li><li>Tierhort</li></ul></div></div>
-<div class="card pad"><h2>Sichtbare Bauphasen</h2><img src="assets/img/buildphases.png" alt="Sechs Bauphasen" style="border-radius:14px;margin:12px 0 8px;"/><p>Gebäude sollen in sechs klar erkennbaren Phasen entstehen – vom planierten Bauplatz bis zum vollständig eingerichteten Endzustand.</p></div>
+
 
     <div class="footer">AncientLords Projekt-Wiki · Erstfassung mit modernem Layout, Bildteasern und Kapitelstruktur · 23.11.2026</div>
   </main>
