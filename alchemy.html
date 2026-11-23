@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>07 – Alchemie · AncientLords Wiki</title>
 <link rel="stylesheet" href="assets/style.css"/>
+<style>
+.trankkarte > img {display:block;width:min(100%,14rem);height:auto;margin:1rem auto 0}
+.trankkarte h3 {overflow-wrap:anywhere}
+</style>
 </head>
 <body>
 <div class="layout">
@@ -42,10 +46,63 @@
     </div>
   </aside>
   <main class="main">
-        
-<div class="page-head"><div><h1>07 – Alchemie</h1><p>Die Alchemie orientiert sich in ihrer Unsicherheit und Entdeckungslogik an <em>Die Alchemisten</em>. Erkenntnis entsteht durch Versuch, Irrtum und Dokumentation.</p></div><span class="badge fixed">Mockup vorhanden</span></div>
-<div class="cover"><img src="assets/img/alchemy.png" alt="Alchemie"/></div>
-<div class="grid cols-2"><div class="card pad"><h2>Prinzip</h2><ul class="clean"><li>Immer zwei seltene Zutaten werden kombiniert</li><li>Das Resultat ist zunächst ein Trank mit unbekannter Wirkung</li><li>Wirkung, Stärke, Dauer und Nebenwirkung werden erst durch Experimente sichtbar</li></ul></div><div class="card pad"><h2>UI-Ziele</h2><ul class="clean"><li>Geblurrter, ruhiger Hintergrund</li><li>Klare Trennung aus Zutatenlager, Kessel und Ergebnis</li><li>Hoher Fokus auf Entdeckung statt auf Zahlenoptimierung</li></ul></div></div>
+    <header class="page-head">
+      <div>
+        <h1>07 – Alchemie</h1>
+        <p>Auf ihren Streifzügen über die Karte finden die Untertanen seltene Kräuter, Pilze, Hölzer und weitere Bestandteile. Sie bringen ihre Funde zum Alchemisten zurück, der daraus Tränke braut.</p>
+      </div>
+    </header>
+    <img src="assets/img/alchemy.png" width="1670" height="941" style="width:100%;height:auto" alt="Die Brauerei mit Zutatenlager, Kessel und Platz für den gebrauten Trank."/>
+    <section aria-labelledby="deduktion">
+      <h2 id="deduktion">Das Brettspiel als Vorbild</h2>
+      <p>Im Brettspiel <em>Die Alchemisten</em> hat jede Zutat verborgene Eigenschaften. Wer zwei verschiedene Zutaten mischt, erfährt durch das Ergebnis etwas über beide. Bestimmte Eigenschaften scheiden aus, andere bleiben möglich. Ein weiterer Versuch mit einer anderen Kombination kann zwischen den verbleibenden Möglichkeiten unterscheiden. Innerhalb einer Partie gilt dieselbe Zuordnung. Zu Beginn der nächsten Partie wird sie neu ausgelost. <a href="https://alchemists.czechgames.com/rules/">Zur offiziellen Spielregel</a></p>
+    </section>
+    <section aria-labelledby="versuche">
+      <h2 id="versuche">Experimente in Ancient Lords</h2>
+      <p>Angenommen, die Untertanen bringen in dieser Runde ein Kraut und einen Pilz zurück. Der Alchemist kombiniert die beiden zufällig verfügbaren Zutaten. Welche Wirkung die Mischung hat, kann sich in jeder Spielrunde ändern. Eine Mischung, die in der vorigen Runde heilte, kann diesmal also eine ganz andere Wirkung haben.</p>
+      <p>Der Alte Gott kann den Trank an einem seiner Untertanen oder an einem Gefangenen erproben lassen. Dabei können negative Wirkungen und Nebenwirkungen auftreten, die Werte oder Resistenzen der Figur verändern. Solche Versuche können auch die Moral der Untertanen senken.</p>
+    </section>
+    <section aria-labelledby="traenke">
+      <h2 id="traenke">Tränke und ihre Wirkungen</h2>
+      <div class="grid cols-3 trankliste">
+        <article class="card trankkarte">
+          <img src="assets/img/trank-staerkung.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Stärkungstrank</h3><p>Erhöht den Angriffsschaden der Einheit.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-heilung.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Heiltrank</h3><p>Füllt die Lebenspunkte der Einheit auf.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-mana.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Manatrank</h3><p>Füllt das Mana der Einheit auf.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-resistenz.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Resistenztrank</h3><p>Erhöht die Verteidigung der Einheit.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-schnelligkeit.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Schnelligkeitstrank</h3><p>Erhöht die Bewegungsgeschwindigkeit der Einheit.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-unsichtbarkeit.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Unsichtbarkeitstrank</h3><p>Dieser seltene Trank macht die Einheit unsichtbar.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-verwandlung.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Verwandlungstrank</h3><p>Dieser seltene Trank verwandelt die Einheit.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-gift.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Gift</h3><p>Verursacht über Zeit kontinuierlich Schaden.</p></div>
+        </article>
+        <article class="card trankkarte">
+          <img src="assets/img/trank-explosion.jpg" alt="" loading="lazy"/>
+          <div class="card-body"><h3>Explosionstrank</h3><p>Löst im Zielgebiet eine Explosion aus.</p></div>
+        </article>
+      </div>
+    </section>
 
     <div class="footer">AncientLords Projekt-Wiki · Erstfassung mit modernem Layout, Bildteasern und Kapitelstruktur · 23.11.2026</div>
   </main>
