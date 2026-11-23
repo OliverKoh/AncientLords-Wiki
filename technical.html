@@ -28,12 +28,12 @@
 <a href="combat.html"><span class="num">06</span><span>Kampf</span></a>
 <a href="alchemy.html"><span class="num">07</span><span>Alchemie</span></a>
 <a href="magic.html"><span class="num">08</span><span>Zauberkunst</span></a>
-<span class="kapitel-geplant"><span class="num">09</span><span>Rangliste</span></span>
+<a href="ranking.html"><span class="num">09</span><span>Rangliste</span></a>
 <a class="active" aria-current="page" href="technical.html"><span class="num">10</span><span>Technik</span></a>
 <a href="uiux.html"><span class="num">11</span><span>UI / UX</span></a>
 <a href="changelog.html"><span class="num">12</span><span>Entwicklungsstand</span></a>
 <a href="open-points.html"><span class="num">13</span><span>Offene Punkte</span></a>
-<span class="kapitel-geplant"><span class="num">14</span><span>Bekannte Bugs</span></span>
+<a href="bugs.html"><span class="num">14</span><span>Bekannte Bugs</span></a>
 </nav>
     </div>
     <div class="side-note">
@@ -42,10 +42,17 @@
     </div>
   </aside>
   <main class="main">
-        
-<div class="page-head"><div><h1>10 – Technik</h1><p>Dieses Kapitel hält die aktuell bekannte technische Basis des Projekts fest und dient später als Einstieg in die Umsetzungsarchitektur.</p></div><span class="badge progress">Startversion</span></div>
-<div class="card pad table-wrap"><table><thead><tr><th>Thema</th><th>Stand</th></tr></thead><tbody><tr><td>Engine</td><td>Unity</td></tr><tr><td>Multiplayer</td><td>Photon Engine – Fusion 2</td></tr><tr><td>Dokumentationsstil</td><td>Living Wiki mit Bildreferenzen und Kapitelstruktur</td></tr><tr><td>Asset-Referenzen</td><td>Mockups für UI, Spielwelt und Spezialsysteme vorhanden</td></tr></tbody></table></div>
-<div class="callout"><strong>Nächster Ausbauschritt</strong> Später sollten hier Projektstruktur, Netzwerkschnitt, Simulationsgrenzen, Asset-Pipeline und Anforderungen an KI-/Agentenunterstützung ergänzt werden.</div>
+    <header class="page-head"><div><h1>10 – Technik</h1><p>AncientLords wird als 3D-Strategiespiel für Windows-PCs entwickelt. Die erste spielbare Abnahme ist für einen einzelnen PC vorgesehen. Der Multiplayer-Ausbau soll dieselben Regeln für Zeit, Platzierung und Baufortschritt verwenden.</p></div></header>
+    <section aria-labelledby="technik-im-projekt"><h2 id="technik-im-projekt">Im Projekt im Einsatz</h2>
+      <div class="card pad table-wrap"><table><thead><tr><th>Bereich</th><th>Technik und Verwendung</th></tr></thead><tbody>
+        <tr><th scope="row">Engine</th><td>Unity 6, Editor <strong>6000.5.8f1</strong> (Revision <code>5cb7df797b7d</code>). Hier werden Szenen, Kamera, Licht und Materialien bearbeitet. <a href="https://github.com/OliverKoh/AncientLords/blob/04f579cd7bce68af50d801a2b70c2b21cf5b4e58/Spiel/ProjectSettings/ProjectVersion.txt">Editorversion</a></td></tr>
+        <tr><th scope="row">Spielcode</th><td>C# für die Spielsimulation. Im technischen Prüflauf verarbeitet eine Instanz die Platzierung und Zeit. Ein zweiter Prozess liest den übertragenen Bauzustand. <a href="https://github.com/OliverKoh/AncientLords/blob/04f579cd7bce68af50d801a2b70c2b21cf5b4e58/Spiel/Assets/Skripte/Bausimulation.cs">Bausimulation</a></td></tr>
+        <tr><th scope="row">Zielplattform</th><td>Windows-PC, 64 Bit. Das Unity-Projekt enthält einen Build-Einstieg für einen eigenständig startbaren Windows-Player. <a href="https://github.com/OliverKoh/AncientLords/blob/04f579cd7bce68af50d801a2b70c2b21cf5b4e58/Spiel/Assets/Editor/WindowsBuild.cs">Build-Einstieg</a></td></tr>
+        <tr><th scope="row">Multiplayer-SDK</th><td><strong>Photon Fusion 2.1.4 Stable, Build 2500</strong>, ist im Projekt vorhanden. <a href="https://github.com/OliverKoh/AncientLords/blob/04f579cd7bce68af50d801a2b70c2b21cf5b4e58/Spiel/Assets/Photon/Fusion/build_info.txt">SDK-Buildinfo</a></td></tr>
+        <tr><th scope="row">Projektarbeit</th><td>Git und GitHub verwalten die Versionsgeschichte. Die Aufgaben liegen auf GitHub Projects. Das Wiki besteht aus HTML-Seiten, einem gemeinsamen Stylesheet und Bilddateien.</td></tr>
+      </tbody></table></div>
+    </section>
+    <section><h2>Multiplayer in Vorbereitung</h2><p>Für einen zweiten Windows-PC ist ein Fusion-Host vorgesehen, der den verbindlichen Spielzustand führt. Ein Client soll seinen Platzierungswunsch an den Host senden und dessen bestätigten Stand anzeigen. Bisher weist ein transportneutraler Test die Übernahme von Position, Spielzeit und Baufortschritt zwischen zwei Prozessen nach. Die Verbindung zweier Spieler über Fusion und der Test auf zwei PCs stehen noch aus. <a href="https://github.com/OliverKoh/AncientLords/blob/04f579cd7bce68af50d801a2b70c2b21cf5b4e58/Spiel/README.md">Technischer Prüflauf</a></p></section>
 
     <div class="footer">AncientLords Projekt-Wiki · Erstfassung mit modernem Layout, Bildteasern und Kapitelstruktur · 23.11.2026</div>
   </main>
