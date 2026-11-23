@@ -126,3 +126,20 @@ ul.clean li::before{content:"✦";position:absolute;left:0;color:#ffcc84}
   .hero-content{padding:34px}
   .grid.cols-3,.grid.cols-2,.metric-list{grid-template-columns:1fr}
 }
+@media (max-width: 600px) {
+  .layout, .grid.cols-3, .grid.cols-2, .metric-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .page-head, .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .page-head > *, .section-title > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .page-head h1, .section-title h2 {
+    overflow-wrap: anywhere;
+  }
+}
