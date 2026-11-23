@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>04 – Fraktionen · AncientLords Wiki</title>
+<title>Fraktionen · AncientLords Wiki</title>
 <link rel="stylesheet" href="assets/style.css"/>
+<style>
+.fraktionen { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-bottom:24px }
+.fraktion { display:flex; align-items:center; gap:clamp(12px,1.5vw,24px); padding:14px }
+.fraktion img { width:36%; max-width:190px; height:auto; flex:none; border-radius:10px }
+.fraktion h2 { margin:0 0 8px; font-size:clamp(1.2rem,1.6vw,1.55rem); line-height:1.15 }
+.fraktion p { margin:0 }
+@media(max-width:720px) { .fraktionen { grid-template-columns:minmax(0,1fr) } }
+</style>
 </head>
 <body>
 <div class="layout">
@@ -40,9 +48,33 @@
   </aside>
   <main class="main">
         
-<div class="page-head"><div><h1>04 – Fraktionen</h1><p>Fraktionen sollen eigenständig und wiedererkennbar sein – mechanisch, visuell und begrifflich. Die Tiefenschmiede sind die erste Referenzrasse.</p></div><span class="badge fixed">Tiefenschmiede als Referenz</span></div>
-<div class="cover"><img src="assets/img/buildings-menu.png" alt="Baumenü Tiefenschmiede"/></div>
-<div class="grid cols-2"><div class="card pad"><h2>Tiefenschmiede</h2><ul class="clean"><li>Zwergische Kultur</li><li>Stein, Metall, Feuer, Runen, Geologie</li><li>Schwerpunkt auf Schmiede, Runen und robustem Bau</li></ul></div><div class="card pad"><h2>Weitere diskutierte Völker</h2><ul class="clean"><li>Menschen</li><li>Orks</li><li>Dschungelweisen (Arbeitstitel)</li><li>Graue Eminenzen</li></ul></div></div>
+<div class="page-head"><div><h1>Fraktionen</h1><p>Fraktionen sollen eigenständig und wiedererkennbar sein – mechanisch, visuell und begrifflich. Die Tiefenschmiede sind die erste Referenzrasse.</p></div><span class="badge fixed">Tiefenschmiede als Referenz</span></div>
+<section class="fraktionen" aria-label="Die sechs Fraktionen">
+  <article class="card fraktion">
+    <img src="assets/img/wappen-ewiger-berg.jpg" alt="Silberne Berggipfel und eisblaue Kristalle auf einem stahlblauen Schild"/>
+    <div><h2>Ewiger Berg</h2><p>Steinwälle durchziehen das Gebirge. Unter den Festungen folgen Stollen den Adern glitzernder Mineralien.</p></div>
+  </article>
+  <article class="card fraktion">
+    <img src="assets/img/wappen-uralte-brut.jpg" alt="Ein grünes Reptil umschließt ein bernsteinfarbenes Ei"/>
+    <div><h2>Uralte Brut</h2><p>Zwischen den alten Tempeln wächst der Wald immer dichter. In seinem Schutz entstehen neue Tiernester, und seltene Pflanzen schlagen Wurzeln.</p></div>
+  </article>
+  <article class="card fraktion">
+    <img src="assets/img/wappen-goldene-ordnung.jpg" alt="Goldene Sonne über drei Türmen und Ackerfurchen auf blauem Grund"/>
+    <div><h2>Goldene Ordnung</h2><p>Straßen verbinden befestigte Siedlungen mit ihren Handelsplätzen. Vor den Stadtmauern erstrecken sich bestellte Felder.</p></div>
+  </article>
+  <article class="card fraktion">
+    <img src="assets/img/wappen-tiefenschmiede.jpg" alt="Kupferner Hammer über einem glühenden Amboss"/>
+    <div><h2>Tiefenschmiede</h2><p>Stein, Metall und Feuer prägen die zwergische Kultur. In ihren Werkstätten verbinden die Tiefenschmiede Schmiedekunst und Runen. Ihre Bauten sind für die Ewigkeit gedacht.</p></div>
+  </article>
+  <article class="card fraktion">
+    <img src="assets/img/wappen-namenloser-schrecken.jpg" alt="Gesichtslose Kapuze in einem verwitterten silbernen Schild"/>
+    <div><h2>Namenloser Schrecken</h2><p>Hinter der silbernen Kapuze liegt Dunkelheit. Im Nebel zwischen kahlen Bäumen und den Dächern der Siedlung schimmert fahles Licht.</p></div>
+  </article>
+  <article class="card fraktion">
+    <img src="assets/img/wappen-stimme-der-gezeiten.jpg" alt="Eine blaugrüne Seeschlange windet sich um eine brechende Welle"/>
+    <div><h2>Stimme der Gezeiten</h2><p>Küstenbewohner, Meerespriester und Wasserwesen bilden eine amphibische Kultur. Strömungen und Gezeiten bestimmen das Verhalten ihrer Anhänger. In trockenen Regionen stößt ihre Macht an Grenzen.</p></div>
+  </article>
+</section>
 <div class="callout"><strong>Namensregel</strong> Gebäude und Spezialsysteme sollen fraktionsspezifisch benannt werden. Ein generisches „Wohnhaus“ ist für die Tiefenschmiede weniger passend als ein „Sippenhaus“.</div>
 
     <div class="footer">AncientLords Projekt-Wiki · Erstfassung mit modernem Layout, Bildteasern und Kapitelstruktur · 23.11.2026</div>
