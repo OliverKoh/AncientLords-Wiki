@@ -143,3 +143,18 @@ ul.clean li::before{content:"✦";position:absolute;left:0;color:#ffcc84}
     overflow-wrap: anywhere;
   }
 }
+
+.nav .kapitel-geplant {display:flex;align-items:center;gap:10px;padding:10px 12px;margin:2px 0;color:var(--muted)}
+.ressourcenseite section {margin-top:28px}
+.ressourcenraster {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ressourcenkarte {display:grid;grid-template-columns:minmax(80px,32%) 1fr;align-items:center}
+.ressourcenkarte img {width:100%;height:auto}
+.ressourcenkarte .card-body {min-width:0}
+.ressourcenseite .callout a {color:#ffd39a;text-decoration:underline}
+@media (max-width:1200px) {
+  .ressourcenraster {grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:480px) {
+  .ressourcenkarte {grid-template-columns:minmax(0,1fr)}
+  .ressourcenkarte img {max-width:230px;margin:auto}
+}
