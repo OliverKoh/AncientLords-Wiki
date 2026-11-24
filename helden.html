@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Helden · AncientLords Wiki</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">AL</div>
+      <div>
+        <h1>AncientLords Wiki</h1>
+        <small>Living Design Document</small>
+      </div>
+    </div>
+    <div class="nav-group">
+      <div class="nav-title">Navigation</div>
+      <nav class="nav" aria-label="Kapitelnavigation">
+<a href="index.html"><span class="num">⌂</span><span>Hauptseite</span></a>
+<a href="gameplay.html"><span class="num">01</span><span>Gesamtüberblick</span></a>
+<a href="vision.html"><span class="num">02</span><span>Vision</span></a>
+<a href="factions.html"><span class="num">03</span><span>Fraktionen</span></a>
+<a href="economy.html"><span class="num">04</span><span>Aufbau</span></a>
+<a href="resources.html"><span class="num">05</span><span>Ressourcen</span></a>
+<a href="combat.html"><span class="num">06</span><span>Kampf</span></a>
+<a href="alchemy.html"><span class="num">07</span><span>Alchemie</span></a>
+<a href="magic.html"><span class="num">08</span><span>Zauberkunst</span></a>
+<a href="ranking.html"><span class="num">09</span><span>Rangliste</span></a>
+<a href="technical.html"><span class="num">10</span><span>Technik</span></a>
+<a href="uiux.html"><span class="num">11</span><span>UI / UX</span></a>
+<a href="changelog.html"><span class="num">12</span><span>Entwicklungsstand</span></a>
+<a href="open-points.html"><span class="num">13</span><span>Offene Punkte</span></a>
+<a href="bugs.html"><span class="num">14</span><span>Bekannte Bugs</span></a>
+<a class="active" aria-current="page" href="helden.html"><span class="num">15</span><span>Helden</span></a>
+<a href="kartenwelt.html"><span class="num">16</span><span>Kartenwelt und Sichtbarkeit</span></a>
+<a href="neutrale-gegner.html"><span class="num">17</span><span>Neutrale Gegner</span></a>
+</nav>
+    </div>
+    <div class="side-note">
+      <strong>Dokumentationsprinzip</strong>
+      Festlegungen, Konzepte und offene Punkte werden sichtbar getrennt. Mockups dienen als Zielbild für Stil, UX und Funktionsumfang.
+    </div>
+  </aside>
+  <main class="main detailseite"><header class="page-head"><div><h1>15 – Helden</h1><p>Ein Held entscheidet selbst, ob er einer Vision folgt, sich einer Gruppe anschließt oder nach einem langen Kampf einkehrt. Sein Beruf, seine Mentalität und sein augenblicklicher Zustand prägen diese Wahl. Zwei Helden derselben Klasse können sich im Laufe einer Partie ganz unterschiedlich entwickeln.</p></div></header>
+<section id="rekrutierung"><h2>Wie Helden ins Volk kommen</h2><p>Eine Taverne kann Abenteurer anlocken. Für Kasernen beschreibt die Detailvision einen zweiten Weg, auf dem Bauern zu Helden werden können. Erscheint ein neuer Held, stehen seine klassenabhängig ausgewürfelten Attribute fest. Der Gott kann einen ungünstigen Wurf weder ablehnen noch durch eine andere Figur ersetzen.</p><p>Oliver hat aktive Ausbildung durch den Spieler ausgeschlossen. Offen bleibt, ob und unter welchen Bedingungen ein Bauer selbst den Weg in die Kaserne und damit den Übergang zum Helden wählt.</p></section>
+<section id="attribute"><h2>Elf Attribute beim Eintritt</h2><p>Der Held verteilt selbstständig 30 Punkte auf <strong>Stärke, Konstitution, Intuition, Wissen, Mut, Charisma, Agilität, Glaube, Mystik, Fokus und Wut</strong>. Bei der Rekrutierung darf ein Attribut höchstens 6 betragen. Der Referenzwert ist 3. Jeder darunterliegende Punkt bringt Abzüge, jeder darüberliegende Punkt Boni auf die zugehörigen abgeleiteten Werte.</p><p>Die genaue Klassenverteilung und die Untergrenze sind offen. Die Formulierung „höchstens 0“ ist mit der Verteilung von 30 Punkten unvereinbar. Spätere außergewöhnliche Attributänderungen durch Magie oder besondere Tränke sind eine Idee.</p></section>
+<section id="werte"><h2>Die 17 abgeleiteten Werte</h2><p>Die Herkunft jedes Werts soll in der Heldenübersicht nachvollziehbar sein. Die Attributpaare sind festgehalten. Faktoren, Grundbeträge, Rundung und Obergrenzen stehen noch zur Entscheidung.</p><table><thead><tr><th scope="col">Wert</th><th scope="col">Attribute</th><th scope="col">Wirkung</th></tr></thead><tbody><tr><th scope="row">Mana</th><td>Wissen + Mystik</td><td>verfügbarer Manavorrat</td></tr>
+<tr><th scope="row">Mana-Regeneration</th><td>Mystik + Fokus</td><td>Manazuwachs pro Sekunde</td></tr>
+<tr><th scope="row">Gesundheit</th><td>Konstitution + Stärke</td><td>maximale Lebenspunkte</td></tr>
+<tr><th scope="row">Lebensregeneration</th><td>Konstitution + Fokus</td><td>Zuwachs an Lebenspunkten pro Sekunde</td></tr>
+<tr><th scope="row">Sichtweite</th><td>Intuition + Wissen</td><td>Radius der sichtbaren Umgebung</td></tr>
+<tr><th scope="row">Loyalität</th><td>Fokus + Glaube</td><td>Bereitschaft, einen Auftrag anzunehmen oder bei der eigenen Truppe zu bleiben</td></tr>
+<tr><th scope="row">Angriffsschaden</th><td>Stärke + Wut</td><td>Schaden einer Nahkampfwaffe</td></tr>
+<tr><th scope="row">Angriffsgeschwindigkeit</th><td>Agilität + Intuition</td><td>Angriffe pro Sekunde</td></tr>
+<tr><th scope="row">Magieresistenz</th><td>Glaube + Wut</td><td>Verringerung erlittenen arkanen Schadens</td></tr>
+<tr><th scope="row">Ausweichen</th><td>Intuition + Agilität</td><td>Chance, einem gewöhnlichen Nah- oder Fernkampftreffer zu entgehen</td></tr>
+<tr><th scope="row">Arkanwiderstand</th><td>Glaube + Mystik</td><td>Chance, einem arkanen Treffer vollständig zu entgehen</td></tr>
+<tr><th scope="row">Führung</th><td>Glaube + Charisma</td><td>Aussicht auf Gruppenführung und Einfluss auf andere</td></tr>
+<tr><th scope="row">Lernen</th><td>Mystik + Wissen</td><td>Anzahl und Lerngeschwindigkeit von Zaubern</td></tr>
+<tr><th scope="row">Lauftempo</th><td>Agilität + Konstitution</td><td>Bewegungsgeschwindigkeit</td></tr>
+<tr><th scope="row">Trefferchance</th><td>Intuition + Fokus</td><td>Trefferwahrscheinlichkeit mit gewöhnlichen Nah- und Fernkampfangriffen</td></tr>
+<tr><th scope="row">Arkantrefferchance</th><td>Mystik + Intuition</td><td>Trefferwahrscheinlichkeit mit arkanen Angriffen</td></tr>
+<tr><th scope="row">Standhaftigkeit</th><td>Wut + Glaube</td><td>Bereitschaft, auch stärkeren oder zahlreicheren Gegnern standzuhalten</td></tr></tbody></table><p>Nach Berechnung des Normalwerts werden feste Boni und Mali aus Ausrüstung, Zaubern, Tränken und anderen Einflüssen addiert. Die Übersicht weist jeden Beitrag aus. Die ältere Kampfbeschreibung führt zusätzlich Rüstung auf. Für sie ist bisher keine Ableitung aus einem Attributpaar beschrieben.</p></section>
+<section id="erfahrung"><h2>Erfahrung, Aufstieg und Talente</h2><p>Ein Held sammelt Erfahrung, wenn er Monster oder gegnerische Helden tötet, Orte erkundet oder Gebäude und Monsterhöhlen zerstört. Bei jedem Aufstieg verteilt er drei Attributspunkte selbst. Ein einzelnes Attribut kann dabei bis auf 10 steigen. Die vorgesehene Stufenobergrenze ist 20 und soll sich für die Spielbalance ändern lassen.</p><p>Zusätzlich erhält der Held je Stufe einen Talentpunkt. Pro Klasse stehen drei Talentbäume zur Verfügung. Ein Held kann darin Stärken vertiefen oder Schwächen ausgleichen, etwa indem er einen Wert verbessert oder seine Angriffsart weiterentwickelt. Knoten, Freischaltbedingungen und Erfahrungsschwellen sind noch offen.</p></section>
+<section id="erholung"><h2>Erholung und Bevölkerungsdruck</h2><p>Lebende Helden heilen langsam durch Regeneration. Zur Rast können sie ein Gasthaus oder ihre Gilde aufsuchen. Erreichen die Lebenspunkte null, stirbt der Held an Ort und Stelle. Das Kapitel <a href="combat.html">Kampf</a> beschreibt die Rückkehr durch ein göttliches Kraftopfer.</p><p>Für größere Heldengruppen sieht die Detailvision einen Überbevölkerungsmalus vor. Die Schwelle liegt bei 30 Helden, jede weitere Stufe umfasst fünf Helden und senkt Werte und Loyalität aller eigenen Helden um fünf Prozent. Offen ist, ob der erste Abzug bei 30, 31 oder 35 Helden greift und in welcher Reihenfolge Prozentabzüge und feste Modifikatoren verrechnet werden. Loyalität zählt bereits zu den abgeleiteten Werten.</p></section>
+<section id="entscheidungen"><h2>Wie ein Held seine nächste Handlung wählt</h2><p>Ein Held kann trainieren, Ausrüstung kaufen, fliehen, kämpfen, erkunden, sich einer Gruppe anschließen oder rasten. Er bewertet die verfügbaren Möglichkeiten nach ihrem Nutzen in der konkreten Situation. Eine Zustandsmaschine führt die gewählte Handlung aus. Eine Wechselhürde (Hysterese) verhindert, dass etwa ein kaum veränderter Trainingsanreiz eine begonnene Rast fortlaufend unterbricht.</p><p>Der Entscheidungsgrund (<code>decisionReason</code>) und die drei höchstbewerteten Alternativen sollen die Auswahl nachvollziehbar machen. Welche dieser Informationen Spieler sehen, bleibt offen. Den Weg zum gewählten Ziel sucht der Held selbst. Seine Sichtweite bestimmt, wie viel Gebiet er dabei um sich herum aufdeckt.</p></section><p class="footer">Spielkonzept · Detailvision · 24.11.2026</p></main>
+</div>
+</body>
+</html>
